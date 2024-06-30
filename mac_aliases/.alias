@@ -1,0 +1,11 @@
+
+
+# vim -> nvim
+alias vim='nvim'
+alias vi='nvim'
+
+# Load tmux session zero or create new one
+alias tmuxa='tmux attach -t 0 || tmux new'
+
+alias ll='ls -l'
+alias la='ls -l -a'
