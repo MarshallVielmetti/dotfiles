@@ -24,3 +24,5 @@ end
 function fish_greeting
   vfetch
 end
+
+source ~/.alias
