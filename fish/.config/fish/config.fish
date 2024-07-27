@@ -22,7 +22,9 @@ end
 
 
 function fish_greeting
-  vfetch
+  if test -f vfetch;
+	  vfetch;
+  end
 end
 
 source ~/.alias
