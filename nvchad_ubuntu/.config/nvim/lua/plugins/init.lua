@@ -24,11 +24,18 @@ return {
         "html-lsp",
         "css-lsp",
         "prettier",
-        "clangd"
+        "clangd",
+        "clang-format"
       },
     },
   },
-
+  {
+    "jose-elias-alvarez/null-ls.nvim",
+    event = "VeryLazy",
+    opts = function()
+        return require "configs.null-ls"
+    end
+  },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
