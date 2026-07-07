@@ -28,3 +28,6 @@ function fish_greeting
 end
 
 source ~/.alias
+
+# Added by Antigravity
+fish_add_path /Users/marshallvielmetti/.antigravity/antigravity/bin
