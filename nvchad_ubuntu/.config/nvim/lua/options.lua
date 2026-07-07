@@ -9,3 +9,8 @@ set.shiftwidth = 4
 
 -- local o = vim.o
 -- o.cursorlineopt ='both' -- to enable cursorline!
+
+
+-- required vimtex configuration
+-- vim.cmd filetype-plugin-on
+
