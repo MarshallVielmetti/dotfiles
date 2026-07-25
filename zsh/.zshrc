@@ -99,7 +99,11 @@ if ! zplug check --verbose; then
     fi
 fi
 
+# Enable Zoxide
+eval "$(zoxide init --cmd cd zsh)"
 source ~/.alias
+
+fastfetch
 
 # User configuration
 
