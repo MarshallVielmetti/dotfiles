@@ -33,6 +33,7 @@ return {
         enable = true,
         -- Disabling standard regex highlighting ensures Tree-sitter completely takes over
         additional_vim_regex_highlighting = false,
+        disable = { "latex" },
       },
     },
   },
@@ -83,6 +84,22 @@ return {
         },
       }
       vim.g.vimtex_quickfix_mode = 0
+      vim.g.vimtex_syntax_custom_cmds = {
+        { name = "eqn", mathmode = true, arggreedy = true },
+        { name = "neqn", mathmode = true, arggreedy = true },
+        { name = "seqn", mathmode = true, nextgroup = "texMathArg" },
+      }
+    end,
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    config = function(_, opts)
+      -- require "nvchad.configs.luasnip"(opts)
+
+      -- Load snippets from ~/.config/nvim/lua/snippets/
+      require("luasnip.loaders.from_lua").lazy_load {
+        paths = { vim.fn.stdpath "config" .. "/lua/snippets" },
+      }
     end,
   },
 }

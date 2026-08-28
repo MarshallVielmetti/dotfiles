@@ -6,7 +6,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "catppuccin",
+  theme = "laptop",
+  -- theme = "laptop",
   transparency = true,
 
   -- hl_override = {

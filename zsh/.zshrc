@@ -133,3 +133,6 @@ fastfetch
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# opencode
+export PATH=/Users/marshallvielmetti/.opencode/bin:$PATH
