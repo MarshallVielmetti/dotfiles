@@ -27,13 +27,8 @@ return {
         "css",
         "markdown",
         "markdown_inline",
+        "latex",
         "python",
-      },
-      highlight = {
-        enable = true,
-        -- Disabling standard regex highlighting ensures Tree-sitter completely takes over
-        additional_vim_regex_highlighting = false,
-        disable = { "latex" },
       },
     },
   },
@@ -89,6 +84,7 @@ return {
         { name = "neqn", mathmode = true, arggreedy = true },
         { name = "seqn", mathmode = true, nextgroup = "texMathArg" },
       }
+      vim.g.tex_no_error = 1 -- This been PMO too long
     end,
   },
   {

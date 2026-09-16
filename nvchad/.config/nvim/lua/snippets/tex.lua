@@ -3,8 +3,9 @@ local ls = require "luasnip"
 local s = ls.snippet
 local i = ls.insert_node
 local fmta = require("luasnip.extras.fmt").fmta
+local math = require "snippet_helpers.math"
 
-return {
+local snippets = {
   s(
     { trig = "eqna", dscr = "LaTeX aligned equation environment" },
     fmta(
@@ -23,3 +24,7 @@ return {
     )
   ),
 }
+
+vim.list_extend(snippets, math.snippets())
+
+return snippets
