@@ -63,6 +63,10 @@ function M.snippets()
     s({ trig = "RR", name = "real numbers", dscr = "Blackboard-bold real numbers" }, t [[\mathbb{R}]], math_only),
     s({ trig = "EE", name = "expectation", dscr = "Blackboard-bold expectation" }, t [[\mathbb{E}]], math_only),
     s({ trig = "PP", name = "probability", dscr = "Blackboard-bold probability" }, t [[\mathbb{P}]], math_only),
+    s({ trig = "xx", name = "bold x", dscr = "Bold math x" }, t [[\mathbf{x}]], math_only),
+    s({ trig = "yy", name = "bold y", dscr = "Bold math y" }, t [[\mathbf{y}]], math_only),
+    s({ trig = "zz", name = "bold z", dscr = "Bold math z" }, t [[\mathbf{z}]], math_only),
+    s({ trig = "uu", name = "bold u", dscr = "Bold math u" }, t [[\mathbf{u}]], math_only),
     s({ trig = "in", name = "set membership", dscr = "LaTeX set-membership relation" }, t [[\in]], math_only),
     s(
       { trig = "\\bmat", name = "bmatrix", dscr = "LaTeX bracketed matrix", wordTrig = false },

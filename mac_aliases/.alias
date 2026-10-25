@@ -7,5 +7,21 @@ alias vi='nvim'
 # Load tmux session zero or create new one
 alias tmuxa='tmux attach -t 0 || tmux new'
 
+# Create or attach to a tmux session named after the current directory
+tmuxn() {
+  local session_name="${PWD:t}"
+
+  if [[ -z "$session_name" ]]; then
+    session_name="root"
+  fi
+
+  tmux new-session -A -s "$session_name" -c "$PWD"
+}
+
+# Attach to a named tmux session
+tmuxs() {
+  tmux attach -t "$1"
+}
+
 alias ll='ls -l'
 alias la='ls -l -a'
